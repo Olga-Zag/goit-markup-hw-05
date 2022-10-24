@@ -107,9 +107,10 @@ ul {
 
 .site-nav .link::after {
   content: "";
-  transition-property: background-color;
+  transition-property: scale;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  scale: 0;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -131,6 +132,7 @@ ul {
   bottom: -13px;
   border-radius: 2px;
   background-color: var(--focus-color);
+  scale: 1;
 }
 
 .list-contacts {
@@ -240,7 +242,7 @@ ul {
   position: fixed;
   top: 0;
   left: 0;
-  transition-property: opacity;
+  transition-property: opacity, visibility;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -278,10 +280,6 @@ ul {
   height: 30px;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .advantages {
