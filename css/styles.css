@@ -451,25 +451,25 @@ img {
   background-color: var(--main-back-color);
   border-radius: 50%;
   color: var(--main-back-color);
-}
-.employee-net-link:hover,
-.employee-net-link:focus {
+
   transition-property: backgraund-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
+}
+.employee-net-link:hover,
+.employee-net-link:focus {
   background-color: var(--focus-color);
 }
 .employee-net-link:hover .employee-net-icon,
 .employee-net-link:focus .employee-net-icon {
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
   fill: currentColor;
 }
 .employee-net-icon {
   fill: #afb1b8;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients {
@@ -505,13 +505,13 @@ img {
   border: 1px solid #afb1b8;
   border-radius: 4px;
 
-  transition-property: color, border-color, fill;
+  transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .client-link:hover,
 .client-link:focus {
-  color: var(--focus-color);
+  /* color: var(--focus-color); */
   border-color: var(--focus-color);
 }
 
@@ -672,6 +672,9 @@ img {
   display: block;
   text-decoration: none;
   color: var(--main-font-color);
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .product-ref:hover,
