@@ -452,7 +452,7 @@ img {
   border-radius: 50%;
   color: var(--main-back-color);
 
-  transition-property: backgraund-color;
+  transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
